@@ -11,6 +11,6 @@ async function bootstrap() {
       allowedHeaders: ['Content-Type', 'dashboardToken'],
     },
   });
-  await app.listen(3000);
+  await app.listen(process.env.APP_PORT);
 }
 bootstrap();
